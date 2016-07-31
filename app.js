@@ -187,7 +187,7 @@ $(document).ready(function() {
         console.log(drink);
 
         for (property in drink) {
-            $(".results").append('<li>' + drink[property] + '</li>');
+            $(".results").append('<li>' + drink[property] + '</li><hr>');
         }
 
     });
