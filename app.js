@@ -176,6 +176,8 @@ $(document).ready(function() {
 //if true property is pushed into drink object
                         if (customerChoice.section[i][property] == 'true') {
                             drink[property] = customerChoice.section[i].items[random()];
+                        }else if (customerChoice.section[i][property] == 'false') {
+                            drink[property] = "";
                         }
                     }
                 }
@@ -187,7 +189,11 @@ $(document).ready(function() {
         console.log(drink);
 
         for (property in drink) {
-            $(".results").append('<li>' + drink[property] + '</li><hr>');
+            $(".results").append('<li id='+ property +'>' + drink[property] + '</li>');
+            if(drink[property] == "") {
+                $(".results").children().find('#' + property).hide();
+                console.log("try")
+            }
         }
 
     });

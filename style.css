@@ -13,8 +13,7 @@ body {
 	font-family: cursive, sans-serif;
 	background-image: url('http://grafit.netpositive.hu/wp-content/uploads/2014/12/40226_indoor_old_pub.jpg');
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	height: 100vh;
 
 
 }
@@ -35,6 +34,7 @@ input {
 h1 {
 	color: white;
 	font-size: 3.5em;
+	text-shadow: 2px 2px 4px #000000;
 }
 
 h3, li{
